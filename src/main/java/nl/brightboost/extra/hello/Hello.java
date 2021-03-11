@@ -1,12 +1,14 @@
 package nl.brightboost.extra.hello;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.time.LocalDate;
 
 @Entity
 public class Hello {
     @Id
+    @GeneratedValue
     private long id;
     private String description;
     private LocalDate ld;

@@ -8,5 +8,7 @@ import java.util.List;
 @Repository
 public interface HelloRepository extends CrudRepository<Hello, Long> {
     List<Hello> findByDescription(String s);
+    List<Hello> findAll();
+
 
 }
