@@ -37,4 +37,9 @@ public class HelloController {
     public String sayHi(@RequestParam(value="name") String name){
         return "hi " + name;
     }
+
+    @RequestMapping(value="chris", method = RequestMethod.GET)
+    public String sayHiChris(){
+        return "hi chris";
+    }
 }
